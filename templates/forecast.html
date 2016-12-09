@@ -1,0 +1,16 @@
+<p>
+    <a href="#">Back to Search</a>
+</p>
+
+<div ng-model="cityText">
+    Forecast for {{cityText}}
+</div>
+<hr/> Days: <a href="#/forecast/2" ng-class="{'bg-primary': cnt === '2'}">2</a> | <a href="#/forecast/5" ng-class="{'bg-primary': cnt === '5'}">5</a> | <a href="#/forecast/7" ng-class="{'bg-primary': cnt === '7'}">7</a> 
+<hr/>
+<div ng-repeat="data in weatherResult.list">
+<div class="row">
+    <div class="col-md-12">
+    <weather-directive w-object="data" to-date-function="toDate(a)" to-celsius-function="toCelsius(b)"></weather-directive>
+    </div>
+    </div>
+</div>
