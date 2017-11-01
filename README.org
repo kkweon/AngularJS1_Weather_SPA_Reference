@@ -1,0 +1,3 @@
+* Weather SPA in Angular.js(v1)
+#+HTML: <img src="assets/demo.png" />
+This is a weather demo application in Angular.js
