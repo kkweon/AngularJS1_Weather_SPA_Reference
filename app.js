@@ -7,25 +7,24 @@ var myApp = angular.module('myApp', ['ngRoute', 'ngResource']);
 
 // ROUTING
 // HOMEPAGE and FORECAST PAGE
-myApp.config(function ($routeProvider) {
+myApp.config(function($routeProvider) {
     $routeProvider
-    .when("/", {
-        
-        templateUrl: 'templates/main.html',
-        controller: 'mainController'
-        
-    })
-    
-    .when("/forecast", {
-        
-        templateUrl: 'templates/forecast.html',
-        controller: 'forecastController'
-    })
-    
-    .when("/forecast/:cnt", {
-        
-        templateUrl: 'templates/forecast.html',
-        controller: 'forecastController'
-    });
-});
+        .when("/", {
 
+            templateUrl: 'templates/main.html',
+            controller: 'mainController'
+
+        })
+
+        .when("/forecast", {
+
+            templateUrl: 'templates/forecast.html',
+            controller: 'forecastController'
+        })
+
+        .when("/forecast/:cnt", {
+
+            templateUrl: 'templates/forecast.html',
+            controller: 'forecastController'
+        });
+});
